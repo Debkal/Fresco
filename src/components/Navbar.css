@@ -1,0 +1,36 @@
+header{
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.header-container{
+    display:flex;
+    align-items: center;
+    float:middle;
+}
+
+.navbar-container{
+    float:right;
+    position:sticky;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    
+}
+.nav-menu{
+    
+    display:flex;
+    float:right;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    list-style:none;
+}
+
+
+.img-icon{
+    height:50px;
+    width:50px;
+}
