@@ -1,22 +1,31 @@
 header{
     
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
+}
+.title-container {
+    margin-right:1rem;
+    font-size:2rem;
+    border: 1px solid black;
 }
 .header-container{
     display:flex;
-    align-items: center;
-    float:middle;
+    justify-content: center;
+    align-self:center;
+    border: 1px solid rgb(209, 92, 92);
+}
+.fresco-head{
+    height:96px;
+    width:96px;
 }
 
 .navbar-container{
     float:right;
+    padding: 1rem;
+    margin: 1rem;
     position:sticky;
     display:flex;
     align-items: center;
     justify-content: right;
+    border: 1px solid black;
     
 }
 .nav-menu{
@@ -25,12 +34,12 @@ header{
     float:right;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;
+    gap:1rem;
     list-style:none;
 }
 
 
 .img-icon{
-    height:50px;
-    width:50px;
+    height:32px;
+    width:32px;
 }
