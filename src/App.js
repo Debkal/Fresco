@@ -3,6 +3,7 @@ import './App.css';
 import HeaderNavbar from './components/Navbar.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SectionOneBg from './components/Sectionone.js';
+import SectionTwoBg from './components/Sectiontwo.js';
 
 function App() {
   return (
@@ -14,8 +15,12 @@ function App() {
           </Routes>
         </HeaderNavbar>
       </Router>
-      <SectionOneBg/>
+      <SectionOneBg>
 
+      </SectionOneBg>
+      <SectionTwoBg>
+        
+      </SectionTwoBg>
     </div>
   );
 }

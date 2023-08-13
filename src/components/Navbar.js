@@ -24,7 +24,7 @@ function HeaderNavbar() {
             <header >
                 <Container className ="header-container" fluid>
                     <Container className="title-container">
-                        <img className="fresco-head" src={fresco150} alt="logo"></img>Fresco Corp's Pledge
+                        <img className="fresco-head" src={fresco150} alt="logo"></img>Fresco Corporation
                     </Container>
                     <Nav className="ms-auto">
                         <div className='navbar-container'>
