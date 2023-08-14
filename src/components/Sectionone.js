@@ -3,9 +3,6 @@ import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import tvstatic  from "../assets/tv-static.gif"
-import tvstatic2 from "../assets/tv-static1.gif"
-import tvstatic3 from "../assets/static-glitch.gif"
-import tvstatic4 from "../assets/guy-flow.gif"
 import tvstatic5 from "../assets/blur-static.gif"
 import VideoBg from "./Videobg.js";
 import VideoPlayer from './Videoplayer.js';

@@ -4,6 +4,7 @@ import { Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import tvstatic  from "../assets/tv-static.gif"
 import windowframe from "../assets/netscape900.png";
+import windowframe1 from "../assets/netscape730.png";
 import VideoPlayer from './Videoplayer';
 import video from "./videosrc.mp4"
 import ReactPlayer from 'react-player';
@@ -20,12 +21,14 @@ function VideoBg() {
             justifyContent: 'center',
             marginTop: '2.5rem',
             position: 'absolute',
-            backgroundImage: `url(${windowframe})`,
-            minHeight:'700px',
+            backgroundImage: `url(${windowframe1})`,
+            minHeight:'730px',
             maxHeight:'795px',
+            maxWidth:'730px',
             height: '100%',
             width: '100%',
             border: 'black solid 1px',
+            borderRadius: '.2em',
             zIndex: '2',
             overflow: 'visible',
             }}

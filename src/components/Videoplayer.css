@@ -1,21 +1,33 @@
 .videoWrapper{
     position:relative;
     padding-top:56.25%;
+    box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.7);
 }
-.react-player {
+.react-player iframe{
     margin-top: 0;
     margin-left:0.15rem;
     margin-right: 0rem;
     margin-bottom: 3rem;
-    top:5.5%;
-    left:-0.3%;
+    top:5.2%;
+    left:-5.1%;
     padding:0rem;
     position: absolute;
+    object-fit: fill;
+    max-width:892px;
+    max-height:720px;
+    min-height: 700px;
+    min-width: 800px;
+    margin-bottom:0.5rem;
+    overflow:visible;
 }
-video{
+
+/*position:absolute;
     border-radius:0.25em;
     padding-bottom: 1rem;
     object-fit: fill;
     max-width:892px;
     max-height:700px;
-}
+    min-height: 700px;
+    min-width: 800px;
+    height: 100%;
+    width:100%; */
