@@ -4,9 +4,14 @@ import { Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
-import fresco150 from "../assets/fresco150.png"
+import scrollbg from "../assets/frescobg/scroll1.png"
+import scrollbg1 from "../assets/frescobg/scroll2.png"
+
+const images= importAll(require.context('../assets/frescobg',true))
 
 function SectionTwoBg(){
+    
+
     const slideLeft = keyframes `
     from { background-position: 0 0;}
     to {background-position: -300px 0px;}
@@ -26,10 +31,22 @@ function SectionTwoBg(){
             sx={{
             zIndex: '1',
             animation: `${slideLeft} 10s linear infinite `,
-            backgroundImage: `url(${officebg})`,
+            backgroundImage: `url(${scrollbg})`,
             backgroundRepeat: "repeat-x",
             backgroundPosition: "center",
-            height:"800px"}}
+            height:"400px"}}
+            
+            ></Container>
+            <Container
+            component="div"
+            maxWidth='false'
+            sx={{
+            zIndex: '1',
+            animation: `${slideLeft} 10s linear infinite `,
+            backgroundImage: `url(${scrollbg1})`,
+            backgroundRepeat: "repeat-x",
+            backgroundPosition: "center",
+            height:"400px"}}
             
             ></Container>
             <Container
@@ -48,6 +65,9 @@ function SectionTwoBg(){
 
         
     )
+}
+function importAll(r){
+    return r.keys().map(r);
 }
 
 export default SectionTwoBg;

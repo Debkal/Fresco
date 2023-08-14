@@ -2,9 +2,7 @@ import * as React from "react";
 import Button from '@mui/material/Button';
 import { Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
-import video from "./videosrc.mp4"
 import ReactPlayer from 'react-player';
-import screenfull from 'screenfull';
 import './Videoplayer.css'
 
 
