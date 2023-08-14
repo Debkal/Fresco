@@ -7,8 +7,10 @@ import tvstatic2 from "../assets/tv-static1.gif"
 import tvstatic3 from "../assets/static-glitch.gif"
 import tvstatic4 from "../assets/guy-flow.gif"
 import tvstatic5 from "../assets/blur-static.gif"
+import VideoBg from "./Videobg.js";
+import VideoPlayer from './Videoplayer.js';
 
-function SectionOneBg(){
+function SectionOneBg() {
     
     return (
         <>
@@ -17,15 +19,23 @@ function SectionOneBg(){
             component="div"
             maxWidth='false'
             sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignContent: 'center',
             backgroundImage: `url(${tvstatic})`,
             backgroundRepeat: "repeat-x",
             backgroundPosition: "center",
             backgroundSize: "cover",
             marginBottom: "3rem",
+            minHeight:'960px',
             height:"90vh",
-            border: 'black solid 1px'
+            border: 'black solid 1px',
+            zIndex: '1'
             }}
-            ></Container>
+            >
+                <VideoBg>
+                </VideoBg>
+            </Container>
             
         </>
 

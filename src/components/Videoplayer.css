@@ -1,0 +1,21 @@
+.videoWrapper{
+    position:relative;
+    padding-top:56.25%;
+}
+.react-player {
+    margin-top: 0;
+    margin-left:0.15rem;
+    margin-right: 0rem;
+    margin-bottom: 3rem;
+    top:5.5%;
+    left:-0.3%;
+    padding:0rem;
+    position: absolute;
+}
+video{
+    border-radius:0.25em;
+    padding-bottom: 1rem;
+    object-fit: fill;
+    max-width:892px;
+    max-height:700px;
+}

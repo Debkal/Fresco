@@ -4,7 +4,6 @@ import HeaderNavbar from './components/Navbar.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SectionOneBg from './components/Sectionone.js';
 import SectionTwoBg from './components/Sectiontwo.js';
-import VideoBg from './components/Videobg.js';
 
 function App() {
   return (
@@ -17,9 +16,6 @@ function App() {
         </HeaderNavbar>
       </Router>
       <SectionOneBg>
-        <VideoBg>
-          
-        </VideoBg>
       </SectionOneBg>
       <SectionTwoBg>
         
