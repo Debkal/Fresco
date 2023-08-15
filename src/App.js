@@ -4,6 +4,7 @@ import HeaderNavbar from './components/Navbar.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SectionOneBg from './components/Sectionone.js';
 import SectionTwoBg from './components/Sectiontwo.js';
+import Sectiontwobar from './components/Sectiontwobar.js';
 import Footer from './components/Footer.js';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <VideoPlayer/>
          </VideoBg>*/}
       </SectionOneBg>
+      <Sectiontwobar></Sectiontwobar>
       <SectionTwoBg>
       </SectionTwoBg>
       <Footer>

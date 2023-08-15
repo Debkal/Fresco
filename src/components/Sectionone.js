@@ -8,7 +8,7 @@ import VideoBg from "./Videobg.js";
 import VideoPlayer from './Videoplayer.js';
 
 function SectionOneBg() {
-    
+
     return (
         <>
         
