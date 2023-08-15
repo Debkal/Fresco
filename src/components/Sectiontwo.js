@@ -4,8 +4,6 @@ import { Grid,Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
-import scrollbg from "../assets/frescobg/scroll1.png"
-import scrollbg1 from "../assets/frescobg/scroll2.png"
 import Imagebg from "./Imagegrid.js"
 import { Row } from "reactstrap";
 
@@ -23,62 +21,85 @@ function SectionTwoBg(){
     to {background-position: 300px 0px;}
         }
     `;
+    const slide = keyframes `
+    0%    {transform: translate(-15%)}
+    100% {transform: translate( 15%)}
+    }`
+    const slide1 = keyframes `
+    0% {transform: translate(15%)}
+    100% {transform: translate(-15%)}` 
+    const slideAround = keyframes `
+    0% {
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: var(--rect) 1fr;
+      }
+      25% {
+        grid-template-columns: 20% 1fr;
+        grid-template-rows: 100% 1fr;
+      }
+      50% {
+        grid-template-columns: 50% 1fr;
+        grid-template-rows: var(--rect) 1fr;
+      }
+      75% {
+        grid-template-columns: var(--rect) 1fr;
+        grid-template-rows: 70% 1fr;
+      }
+       100% {
+        grid-template-columns: 100% 1fr;
+        grid-template-rows: 100% 1fr;
+      }
+    }
+    `;
+
+
     return (
         <>
             <Container
             component="div"
             maxWidth='false'
-            sx={{
-            maxHeight: '1800px',
-            zIndex: '1',
-            animation: `${slideLeft} 10s linear infinite `,
-            }}>
-            <Grid maxWidth='false' container space={0} direction='row' wrap='nowrap'
             >
-                <Grid container>
+            <Grid maxWidth='false' container space={0} direction='column' wrap='nowrap'
+            overflow='hidden' animations={true}
+            sx={{
+                
+                justifyContent: 'center',
+                alignContent: 'center',
+                maxHeight: '1800px',
+                zIndex: '1',
+                backgroundRepeat: 'repeat-x',
+                
+                }}
+            >
+                <Grid container sx={{
+                    animation: `${slide} 8s infinite alternate linear  `
+                }}
+                >
                     <Innergrid></Innergrid>
                 </Grid>
-                <Grid container >
+                <Grid container sx={{
+                    animation: `${slide1} 10s infinite alternate linear `
+                }}>
                     <Innergrid></Innergrid>
                 </Grid>
-                <Grid container >
+                <Grid container sx={{
+                    animation: `${slide} 8s infinite alternate linear  `
+                }}>
                     <Innergrid></Innergrid>
                 </Grid>
-                <Grid container>
+                <Grid container sx={{
+                    animation: `${slide1} 10s infinite alternate linear  `
+                }}>
                     <Innergrid></Innergrid>
                 </Grid>
-                <Grid container>
+                <Grid container sx={{
+                    animation: `${slide} 8s infinite alternate linear  `
+                }}>
                     <Innergrid></Innergrid>
                 </Grid>
-                <Grid container>
-                    <Innergrid></Innergrid>
-                </Grid>
+                
             </Grid>
             </Container>
-            <Container
-            component="div"
-            maxWidth='false'
-            sx={{
-            zIndex: '1',
-            animation: `${slideLeft} 10s linear infinite `,
-            backgroundImage: `url(${scrollbg1})`,
-            backgroundRepeat: "repeat-x",
-            backgroundPosition: "center",
-            height:"400px"}}
-            
-            ></Container>
-            <Container
-            component="div"
-            maxWidth='false'
-            sx={{
-            zIndex: '1',
-            animation: `${slideRight} 9s linear infinite `,
-            backgroundImage: `url(${sweatshop})`,
-            backgroundRepeat: "repeat-x",
-            backgroundPosition: "center",
-            height: "80vh",
-            width: "100%"}}
-            ></Container>
         </>
 
         
@@ -87,22 +108,26 @@ function SectionTwoBg(){
 function Innergrid() {
     return (
         <>
-            <Grid container direction='column' >
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap' 
+            overflow='hidden'>
                 <Imagebg></Imagebg>
             </Grid>
-            <Grid container direction='column'>
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap'>
                 <Imagebg></Imagebg>
             </Grid>
-            <Grid container direction='column'>
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap'>
                 <Imagebg></Imagebg>
             </Grid>
-            <Grid container direction='column'>
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap'>
                 <Imagebg></Imagebg>
             </Grid>
-            <Grid container direction='column'>
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap'>
                 <Imagebg></Imagebg>
             </Grid>
-
+            <Grid container height='300px' width='300px' objectFit='cover' direction='row' wrap='nowrap'>
+                <Imagebg></Imagebg>
+            </Grid>
+            
         </>
     )
 }
