@@ -6,10 +6,12 @@ import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
 import Imagebg from "./Imagegrid.js"
 
-function Mintbar() {
+function Mintbar(props) {
     return (
         <>
-
+            <Container className="mintbar-container">
+                <Container></Container>
+            </Container>
         </>
     )
 }

@@ -72,7 +72,7 @@ function SectionTwoBg(){
                 }}
             >
                 <Grid container sx={{
-                    animation: `${slide} 8s infinite alternate linear  `
+                    animation: `${slide} 7s infinite alternate linear  `
                 }}
                 >
                     <Innergrid></Innergrid>
@@ -83,7 +83,7 @@ function SectionTwoBg(){
                     <Innergrid></Innergrid>
                 </Grid>
                 <Grid container sx={{
-                    animation: `${slide} 8s infinite alternate linear  `
+                    animation: `${slide} 7s infinite alternate linear  `
                 }}>
                     <Innergrid></Innergrid>
                 </Grid>
@@ -93,7 +93,7 @@ function SectionTwoBg(){
                     <Innergrid></Innergrid>
                 </Grid>
                 <Grid container sx={{
-                    animation: `${slide} 8s infinite alternate linear  `
+                    animation: `${slide} 7s infinite alternate linear  `
                 }}>
                     <Innergrid></Innergrid>
                 </Grid>
