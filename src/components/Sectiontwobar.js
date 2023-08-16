@@ -5,6 +5,7 @@ import { keyframes } from "@mui/material";
 import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
 import Imagebg from "./Imagegrid.js"
+import Typography from "@mui/material/Typography";
 
 
 function Mintbar(props) {
@@ -12,10 +13,15 @@ function Mintbar(props) {
         <>
             <Container className="mintbar-container" fluid
             sx={{
-                border:'1px solid black',
-                padding: '3rem',
+                color: "white",
+                padding: '2rem',
             }}> 
-                <Container>Mint Info</Container>
+                <Container>
+                    <Typography variant='h2'>
+                        Mint Info
+                        
+                    </Typography>
+                </Container>
             </Container>
         </>
     )

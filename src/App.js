@@ -4,7 +4,7 @@ import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SectionOneBg from './components/Sectionone.js';
 import SectionTwoBg from './components/Sectiontwocontainer'
 import Sectiontwoslide from './components/Sectiontwos';
-import Footer from './components/Footer.js';
+import Foot from './components/Footer.js';
 import Mintbar from './components/Sectiontwobar.js';
 import Windowmint from './components/Mintwindow.js';
 
@@ -30,12 +30,11 @@ function App() {
       <SectionTwoBg>
         <Windowmint></Windowmint>
         <Sectiontwoslide>
-          
         </Sectiontwoslide>
       </SectionTwoBg>
       
-      <Footer>
-      </Footer>
+      <Foot></Foot>
+      
     </div>
   );
 }

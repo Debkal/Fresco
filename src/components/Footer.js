@@ -6,11 +6,29 @@ import fresco150 from '../assets/fresco150.png'
 import discordLogo from '../assets/discord-mark-black.png'
 import openseaLogo from '../assets/opensea-logo.png'
 import { Link } from 'react-router-dom';
-import {Container, Nav, Navbar,NavbarBrand,NavItem,NavLink} from 'reactstrap';
-import './Footer.css';
+import { Box,Container, Paper, Slide } from "@mui/material";
+import { Typography } from '@mui/material';
 
-function Footer(props){
 
+function Foot(){
+    return (
+    <>
+        <Container maxWidth="false"
+        sx={{
+            
+            padding:'1rem',
+            width:'100%',
+            height:'100%',
+            padding: '2rem',
+            background: '#343A40',
+        }}
+        >
+            <Typography color="white">
+                Copyright © Fresco Corporation 
+            </Typography>
+        </Container>
+    </>
+    )
 }
 
-export default Footer;
+export default Foot;

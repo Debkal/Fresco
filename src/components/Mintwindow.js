@@ -13,15 +13,15 @@ function Windowmint(){
             maxWidth='md'
             sx={{
                 margin:'auto',
+                overflow: 'hidden',
                 display: 'flex',
                 justifyContent: 'center',
                 background: '#E9ECEF',
                 zIndex: '4',
                 maxWidth: '900px',
-                maxHeight: '700px',
+                maxHeight: '600px',
                 height: '100%',
                 width: '100%',
-                whiteSpace: 'nowrap',
                 position: 'absolute',
                 top: '0',
                 left: '0',
