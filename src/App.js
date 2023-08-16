@@ -2,10 +2,13 @@ import './App.css';
 import HeaderNavbar from './components/Navbar.js';
 import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
 import SectionOneBg from './components/Sectionone.js';
-import SectionTwoBg from './components/Sectiontwo.js';
-import Sectiontwobar from './components/Sectiontwobar.js';
+import SectionTwoBg from './components/Sectiontwocontainer'
+import Sectiontwoslide from './components/Sectiontwos';
 import Footer from './components/Footer.js';
 import Mintbar from './components/Sectiontwobar.js';
+import Windowmint from './components/Mintwindow.js';
+
+
 
 function App() {
   return (
@@ -24,9 +27,13 @@ function App() {
          </VideoBg>*/}
       </SectionOneBg>
       <Mintbar></Mintbar>
-      <Sectiontwobar></Sectiontwobar>
       <SectionTwoBg>
+        <Windowmint></Windowmint>
+        <Sectiontwoslide>
+          
+        </Sectiontwoslide>
       </SectionTwoBg>
+      
       <Footer>
       </Footer>
     </div>

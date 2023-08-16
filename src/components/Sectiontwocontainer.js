@@ -5,19 +5,17 @@ import { keyframes } from "@mui/material";
 import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
 import Imagebg from "./Imagegrid.js"
+import { Row } from "reactstrap";
+import Windowmint from "./Mintwindow";
+import './Sectiontwocontainer.css'
 
-
-function Mintbar(props) {
+function SectiontwobgContainer(props) {
     return (
         <>
-            <Container className="mintbar-container" fluid
-            sx={{
-                border:'1px solid black',
-                padding: '3rem',
-            }}> 
-                <Container>Mint Info</Container>
-            </Container>
+            <div className="section-two-bg">
+                {props.children}</div>
         </>
     )
 }
-export default Mintbar;
+
+export default SectiontwobgContainer;

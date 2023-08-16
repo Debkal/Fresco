@@ -23,7 +23,6 @@ function SectionOneBg() {
             backgroundRepeat: "repeat-x",
             backgroundPosition: "center",
             backgroundSize: "cover",
-            marginBottom: "3rem",
             minHeight:'960px',
             height:"90vh",
             border: 'black solid 1px',
