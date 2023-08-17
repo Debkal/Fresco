@@ -4,7 +4,6 @@ import { Grid,Box,Container, Paper, Slide } from "@mui/material";
 import { keyframes } from "@mui/material";
 import officebg from "../assets/office.png"
 import sweatshop from "../assets/sweatshop.png"
-import Imagebg from "./Imagegrid.js"
 import { Row } from "reactstrap";
 import Windowmint from "./Mintwindow";
 import './Sectiontwocontainer.css'
