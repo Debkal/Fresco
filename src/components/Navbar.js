@@ -6,7 +6,8 @@ import fresco150 from '../assets/fresco150.png'
 import discordLogo from '../assets/discord-mark-black.png'
 import openseaLogo from '../assets/opensea-logo.png'
 import { Link } from 'react-router-dom';
-import {Container, Nav, Navbar,NavbarBrand,NavItem,NavLink} from 'reactstrap';
+import { Typography } from '@mui/material';
+import { Container} from '@mui/material';
 import './Navbar.css';
 
 function HeaderNavbar() {
@@ -21,12 +22,18 @@ function HeaderNavbar() {
 
     return (
         <>
-            <header >
-                <Container className ="header-container" fluid>
+            <header>
+                <Container className ="header-container" fluid sx={{
+                    display:"flex",
+                    flexDirection:"row",
+                    
+
+                }}>
                     <Container className="title-container">
-                        <img className="fresco-head" src={fresco150} alt="logo"></img>Fresco Corporation
+                        Fresco Corporation
                     </Container>
-                    <Nav className="ms-auto">
+                    <Container sx={{
+                    }}>
                         <div className='navbar-container'>
                             <ul className="nav-menu">
                                 <li>
@@ -59,7 +66,7 @@ function HeaderNavbar() {
                                 </li>
                             </ul>
                         </div>
-                    </Nav>
+                    </Container>
                 </Container>
             </header>
         </>

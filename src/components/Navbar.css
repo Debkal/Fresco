@@ -1,27 +1,20 @@
-header{
-    padding: 1em;
-    background-color: #F8F9FA;
-    border: 1px solid black;
-}
+
 .title-container {
-    position: absolute;
-    top: 0%;
-    margin-right:3rem;
+    flex:1 0 auto;
+    position: relative;
+    left: 5%;
     font-size:3rem;
     font-weight: bold;
 }
 .header-container{
     display:flex;
     justify-content: center;
-}
-.fresco-head{
-    margin-top: 1rem;
-    margin-right:2rem;
-    height:96px;
-    width:96px;
+    align-items: center;
 }
 
 .navbar-container{
+    position:absolute;
+    right: 75%;
     padding: 1rem;
     margin: 1rem;
     position:sticky;
