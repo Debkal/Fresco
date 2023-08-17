@@ -29,20 +29,15 @@ function HeaderNavbar() {
                 alignItems:"center",
                 justifyContent:"center",
                 position:"relative",
-                padding:"1rem",
-                margin:"1rem",
-                
-                
+                padding:"2rem",
+                flexShrink: "2",
+                flexwrap: "wrap",
             }}
             >
                 
-                    <Container className="title-container" sx={{
-                        color:"white",
-                        textAlign:"center",
-                        flex: '1 0 auto',
-                    }}>
+                    <div className="title-container" >
                         Fresco Corporation
-                    </Container>
+                    </div>
                     
                         <div className='navbar-container'>
                             <ul className="nav-menu">
