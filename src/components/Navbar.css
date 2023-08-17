@@ -1,36 +1,29 @@
 
 .title-container {
-    flex:1 0 auto;
-    position: relative;
-    left: 5%;
+    
     font-size:3rem;
     font-weight: bold;
 }
-.header-container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .navbar-container{
-    position:absolute;
-    right: 75%;
-    padding: 1rem;
-    margin: 1rem;
-    position:sticky;
+    margin-right:auto;
+    position:relative;
     display:flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: right;
     border: 1px solid black;
-    
+    max-width: fit-content;
+}
+ul{
+    padding:1rem;
+    margin:0;
 }
 .nav-menu{
-    
     display:flex;
-    float:right;
     justify-content: center;
     align-items: center;
-    gap:1rem;
+    gap:1.5rem;
     list-style:none;
 }
 

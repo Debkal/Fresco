@@ -22,18 +22,28 @@ function HeaderNavbar() {
 
     return (
         <>
-            <header>
-                <Container className ="header-container" fluid sx={{
-                    display:"flex",
-                    flexDirection:"row",
-                    
-
-                }}>
-                    <Container className="title-container">
+            <Container className='header' maxWidth="false"
+            sx={{
+                display:"flex",
+                flexDirection:"row",
+                alignItems:"center",
+                justifyContent:"center",
+                position:"relative",
+                padding:"1rem",
+                margin:"1rem",
+                
+                
+            }}
+            >
+                
+                    <Container className="title-container" sx={{
+                        color:"white",
+                        textAlign:"center",
+                        flex: '1 0 auto',
+                    }}>
                         Fresco Corporation
                     </Container>
-                    <Container sx={{
-                    }}>
+                    
                         <div className='navbar-container'>
                             <ul className="nav-menu">
                                 <li>
@@ -66,9 +76,8 @@ function HeaderNavbar() {
                                 </li>
                             </ul>
                         </div>
-                    </Container>
-                </Container>
-            </header>
+                    
+            </Container>
         </>
     )
 }
