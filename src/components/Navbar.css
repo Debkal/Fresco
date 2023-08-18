@@ -1,4 +1,18 @@
-
+@media screen 
+and (max-width:600px)
+{
+    .title-container{
+        font-size:1.5rem !important;
+        margin-left: 1rem !important;
+    }
+    .navbar-container{
+        margin-left:0% !important;
+    }
+    .img-icon{
+        height: 24px !important;
+        width: 24px !important;
+    }
+}
 .title-container {
     color:white;
     text-align:center;
