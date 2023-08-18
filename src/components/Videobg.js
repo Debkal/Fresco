@@ -5,6 +5,7 @@ import windowframe from "../assets/netscape900.png";
 import windowframe1 from "../assets/netscape730.png";
 import VideoPlayer from './Videoplayer';
 import ReactPlayer from 'react-player';
+import best1 from "../assets/best1.png";
 
 function VideoBg() {
     const boxStyle = {
@@ -27,19 +28,20 @@ function VideoBg() {
             justifyContent: 'center',
             marginTop: '2.5rem',
             position: 'absolute',
-            backgroundImage: `url(${windowframe1})`,
+            backgroundImage: `url(${best1})`,
             backgroundSize: 'contain',
             minHeight: {
                 xs:'378px',
                 sm:'550px',
-                md:'795px',
+                md:'50vh',
             },
             maxHeight:'795px',
             maxWidth:'730px',
             objectFit: 'cover',
             height: {
                 xs:'10% !important',
-                sm:'70%'
+                sm:'50%',
+                md: '70%',
             },
             width: {
                 xs:'90%',
