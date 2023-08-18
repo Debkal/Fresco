@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fresco/static/css/main.df2d1428.css",
-    "main.js": "/Fresco/static/js/main.f64e2eb1.js",
+    "main.css": "/Fresco/static/css/main.5ead1053.css",
+    "main.js": "/Fresco/static/js/main.01acbc54.js",
     "static/js/787.c510942f.chunk.js": "/Fresco/static/js/787.c510942f.chunk.js",
     "static/media/tv-static.gif": "/Fresco/static/media/tv-static.689299d938b2377f721a.gif",
     "static/media/sweatshop.png": "/Fresco/static/media/sweatshop.5a3ec077096f4abd27ba.png",
@@ -76,12 +76,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/Fresco/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/Fresco/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/Fresco/index.html",
-    "main.df2d1428.css.map": "/Fresco/static/css/main.df2d1428.css.map",
-    "main.f64e2eb1.js.map": "/Fresco/static/js/main.f64e2eb1.js.map",
+    "main.5ead1053.css.map": "/Fresco/static/css/main.5ead1053.css.map",
+    "main.01acbc54.js.map": "/Fresco/static/js/main.01acbc54.js.map",
     "787.c510942f.chunk.js.map": "/Fresco/static/js/787.c510942f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.df2d1428.css",
-    "static/js/main.f64e2eb1.js"
+    "static/css/main.5ead1053.css",
+    "static/js/main.01acbc54.js"
   ]
 }
