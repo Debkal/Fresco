@@ -6,6 +6,8 @@ and (max-width:600px)
         margin-left: 1rem !important;
     }
     .navbar-container{
+        display:flex !important;
+        flex-direction: column !important;
         margin-left:0% !important;
     }
     .img-icon{
@@ -32,18 +34,20 @@ and (max-width:600px)
     display:flex;
     justify-content: flex-end;
     align-items: center;
-    border: 1px solid black;
+    border: 1px outset black ;
+    border-radius: 0.25em;
     max-width: fit-content;
 }
+
 ul{
-    padding:1rem;
+    padding:0.5rem;
     margin:0;
 }
 .nav-menu{
     display:flex;
     justify-content: center;
     align-items: center;
-    gap:1.5rem;
+    gap:0.5rem;
     list-style:none;
 }
 

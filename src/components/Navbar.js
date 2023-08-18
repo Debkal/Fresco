@@ -5,12 +5,14 @@ import telegramLogo from '../assets/Telegram_logo.png'
 import fresco150 from '../assets/fresco150.png'
 import discordLogo from '../assets/discord-mark-black.png'
 import openseaLogo from '../assets/opensea-logo.png'
-import { Link } from 'react-router-dom';
 import { Typography } from '@mui/material';
-import { Container} from '@mui/material';
+import { Container,Button} from '@mui/material';
 import './Navbar.css';
 
 function HeaderNavbar() {
+    const openNewTab = (url) => {
+        window.open(url, "_black", "noreferrer");
+    }
     /*const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
 
@@ -42,32 +44,48 @@ function HeaderNavbar() {
                         <div className='navbar-container'>
                             <ul className="nav-menu">
                                 <li>
-                                    <Link>
+                                    <Button 
+                                    onClick={() => {
+                                        openNewTab("https://twitter.com/FrescoCorp")
+                                    }}
+                                    sx={{
+                                        minWidth: '32px',
+                                        color: 'black',
+                                    }}>
                                     <div className="nav-icon">
                                         <img className="img-icon" src={twitterLogo} alt ="twitter"/>
                                     </div>
-                                    </Link>
+                                    </Button>
                                 </li>
                                 <li>
-                                    <Link>
+                                    <Button sx={{
+                                        minWidth: '32px',
+                                        color: 'black',
+                                    }}>
                                     <div className ="nav-icon">
                                         <img className="img-icon" src={telegramLogo} alt="telegram"></img>
                                     </div>
-                                    </Link>
+                                    </Button>
                                 </li>
                                 <li>
-                                    <Link>
+                                    <Button sx={{
+                                        minWidth: '32px',
+                                        color: 'black',
+                                    }}>
                                     <div className= "nav-icon">
                                         <img className= "img-icon" src={discordLogo} alt="discord"></img>
                                     </div>
-                                    </Link>
+                                    </Button>
                                 </li>
                                 <li>
-                                    <Link>
+                                    <Button sx={{
+                                        minWidth: '32px',
+                                        color: 'black',
+                                    }}>
                                     <div className='nav-icon'>
                                         <img className= "img-icon" src={openseaLogo} alt='MarketPlace'></img>
                                     </div>
-                                    </Link>
+                                    </Button>
                                 </li>
                             </ul>
                         </div>
@@ -75,6 +93,12 @@ function HeaderNavbar() {
             </Container>
         </>
     )
+}
+
+function RedirectPage() {
+    React.useEffect(() => {
+        window.location.replace('https://twitter.com/FrescoCorp')
+    },[])
 }
 
 export default HeaderNavbar;

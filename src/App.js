@@ -13,13 +13,11 @@ import Windowmint from './components/Mintwindow.js';
 function App() {
   return (
     <div className="App">
-      <Router>
-        <HeaderNavbar>
-          <Routes>
-            <Route path='/' exact/>
-          </Routes>
-        </HeaderNavbar>
-      </Router>
+    
+      <HeaderNavbar>
+          
+      </HeaderNavbar>
+     
       <SectionOneBg>
          {/*
          <VideoBg>
